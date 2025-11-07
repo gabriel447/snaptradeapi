@@ -134,7 +134,7 @@ function App() {
     <div className="page">
       <header className={"hero " + ((analyzing || showResult) ? 'hero-muted' : '')}>
         <h1 className="title">SnapTrade</h1>
-        <p className="subtitle">Envie seu gráfico para análise</p>
+        <p className="subtitle">Envie um print do seu gráfico para análise.</p>
       </header>
 
       <main className={"content " + (analyzing ? 'content-middle' : (showResult ? 'content-top' : ''))}>
@@ -147,7 +147,6 @@ function App() {
                 <div className="picker-icon" aria-hidden="true">📈</div>
                 <div className="picker-text">
                   <h2>Selecionar Gráfico</h2>
-                  <span className="hint">Envie seu gráfico para análise</span>
                   {file && <span className="filename">{file.name}</span>}
                 </div>
               </label>
@@ -268,7 +267,7 @@ function App() {
       {analyzing && (
         <section className="card analyzing-card fade-in" aria-live="polite">
           <h2 className="modal-title">Analisando Mercado</h2>
-          <p className="modal-sub">Nosso algoritmo está processando os dados para sua operação</p>
+          <p className="modal-sub">Nosso algoritmo está processando os dados..</p>
           {[
             'IA analisando padrões complexos...',
             'Algoritmos processando dados...',
